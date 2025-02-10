@@ -14,7 +14,7 @@ const EditProduct = () => {
     const fetchProduct = async () => {
       try {
         const { data } = await axios.put(
-          `http://localhost:3000/api/products/${id}`
+          `http://localhost:3000/products/${id}`
         );
 
         setName(data.data.name);
